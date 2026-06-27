@@ -39,6 +39,9 @@
         <li class="nav-item" data-tab="members" id="nav-members">
           <a href="#members"><span>👥</span> Members</a>
         </li>
+        <li class="nav-item" data-tab="agentfield" id="nav-agentfield">
+          <a href="#agentfield"><span>🤖</span> AgentField.ai</a>
+        </li>
         <li class="nav-item" data-tab="resources" id="nav-resources">
           <a href="#resources"><span>📚</span> Resources</a>
         </li>
@@ -158,6 +161,140 @@
                 <li>Demonstrate execution logs in your pitch deck.</li>
               </ul>
               <button class="btn btn-sm btn-outline btn-block" style="margin-top: 16px;" id="home-bonus-info-btn">Read Integration Specs</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- VIEW: AgentField.ai -->
+        <section class="view-section" id="view-agentfield">
+          <div class="hero-banner">
+            <span class="hero-tag">AGENTFIELD.AI - POWERED BY PARTNER</span>
+            <h1>Build, Deploy & Scale AI Agents with AgentField.ai</h1>
+            <p>AgentField.ai is an open-source platform for building, deploying, and managing autonomous AI agents and multi-agent systems. As the Powered By Partner of Agent{A}thon NCR 2026, AgentField.ai empowers builders with modern agent-building technologies and tools to create production-ready AI solutions.</p>
+            <div style="display:flex; gap:12px; flex-wrap:wrap;">
+              <button class="btn" id="agentfield-explore-btn">Explore Platform</button>
+              <button class="btn btn-outline" id="agentfield-docs-btn">📖 View Documentation</button>
+            </div>
+          </div>
+
+          <div class="section-title">
+            <h2>Platform Capabilities</h2>
+            <span>What AgentField.ai Offers</span>
+          </div>
+
+          <div class="grid-3">
+            <div class="card">
+              <span class="card-badge badge-cyan">Core Features</span>
+              <h3 class="card-title">Build Autonomous Agents</h3>
+              <p class="card-desc">Create intelligent agents with decision-making capabilities, tool integrations, and autonomous workflows. Design agents that can reason, plan, and execute complex tasks independently.</p>
+              <div class="card-meta">
+                <span>🤖 AI-Powered</span>
+                <span>⚡ Real-time</span>
+              </div>
+            </div>
+            <div class="card">
+              <span class="card-badge badge-purple">Multi-Agent</span>
+              <h3 class="card-title">Orchestrate Multi-Agent Systems</h3>
+              <p class="card-desc">Coordinate multiple autonomous agents to collaborate on complex problems. Enable inter-agent communication, shared knowledge bases, and collaborative task execution for sophisticated workflows.</p>
+              <div class="card-meta">
+                <span>🔗 Interconnected</span>
+                <span>🎯 Coordinated</span>
+              </div>
+            </div>
+            <div class="card featured">
+              <span class="card-badge badge-pink">Production Ready</span>
+              <h3 class="card-title">Deploy & Scale Instantly</h3>
+              <p class="card-desc">Deploy agents to production with built-in monitoring, error handling, and scaling capabilities. Production-grade infrastructure for reliable, scalable AI applications with automatic retry logic and fault tolerance.</p>
+              <div class="card-meta">
+                <span>☁️ Cloud Native</span>
+                <span>📊 Observable</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="section-title">
+            <h2>Integration & Evaluation</h2>
+            <span>How to Leverage AgentField.ai in Agent{A}thon</span>
+          </div>
+
+          <div class="grid-2">
+            <div class="card">
+              <h3 class="card-title">🎯 Bonus Points (20x)</h3>
+              <p class="card-desc">Teams that integrate AgentField.ai into their projects and build solutions around an AgentField.ai-sponsored problem statement will be eligible for 20 bonus points during evaluation.</p>
+              <ul style="padding-left: 20px; font-size: 13px; color: var(--text-muted); line-height: 1.8; margin-top: 12px;">
+                <li>✅ Integrate AgentField.ai SDK</li>
+                <li>✅ Build solution around sponsored problem</li>
+                <li>✅ Demonstrate innovative use cases</li>
+                <li>✅ Score 20 bonus evaluation points</li>
+              </ul>
+            </div>
+            <div class="card">
+              <h3 class="card-title">📋 Evaluation Criteria</h3>
+              <p class="card-desc">Participants using AgentField.ai will be asked to demonstrate:</p>
+              <ul style="padding-left: 20px; font-size: 13px; color: var(--text-muted); line-height: 1.8; margin-top: 12px;">
+                <li>✅ How AgentField.ai was integrated</li>
+                <li>✅ Key workflows & automations</li>
+                <li>✅ Impact on functionality</li>
+                <li>✅ Execution logs in pitch deck</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="section-title">
+            <h2>Getting Started</h2>
+            <span>Step-by-Step Integration Guide</span>
+          </div>
+
+          <div class="grid-2">
+            <div class="card">
+              <h3 class="card-title">Step 1: Install SDK</h3>
+              <p class="card-desc">Begin by installing the AgentField.ai client SDK into your project environment. Choose your preferred language and follow the installation guide.</p>
+              <code style="background: rgba(100, 200, 255, 0.1); padding: 10px; border-radius: 6px; font-size: 11px; color: var(--cyan); display: block; margin-top: 10px; overflow-x: auto;">npm install agentfield-ai</code>
+              <button class="btn btn-sm btn-outline" style="margin-top: 12px;">View Installation Guide</button>
+            </div>
+            <div class="card">
+              <h3 class="card-title">Step 2: Define Agents</h3>
+              <p class="card-desc">Create your autonomous agents with specific roles, capabilities, and workflows. Define tool integrations and decision-making logic.</p>
+              <code style="background: rgba(100, 200, 255, 0.1); padding: 10px; border-radius: 6px; font-size: 11px; color: var(--cyan); display: block; margin-top: 10px; overflow-x: auto;">const agent = new Agent(...)</code>
+              <button class="btn btn-sm btn-outline" style="margin-top: 12px;">Agent Template</button>
+            </div>
+            <div class="card">
+              <h3 class="card-title">Step 3: Integrate Tools</h3>
+              <p class="card-desc">Connect external APIs, databases, and services as callable tools. Establish tool call callbacks for external network interactions and data access.</p>
+              <code style="background: rgba(100, 200, 255, 0.1); padding: 10px; border-radius: 6px; font-size: 11px; color: var(--cyan); display: block; margin-top: 10px; overflow-x: auto;">agent.addTool('api_name', ...)</code>
+              <button class="btn btn-sm btn-outline" style="margin-top: 12px;">Tool Integration Docs</button>
+            </div>
+            <div class="card">
+              <h3 class="card-title">Step 4: Deploy & Monitor</h3>
+              <p class="card-desc">Deploy your agent system to production with built-in monitoring. Track execution logs, performance metrics, and agent behaviors in real-time.</p>
+              <code style="background: rgba(100, 200, 255, 0.1); padding: 10px; border-radius: 6px; font-size: 11px; color: var(--cyan); display: block; margin-top: 10px; overflow-x: auto;">agent.deploy(config)</code>
+              <button class="btn btn-sm btn-outline" style="margin-top: 12px;">Deployment Guide</button>
+            </div>
+          </div>
+
+          <div class="section-title">
+            <h2>Resources & Support</h2>
+            <span>Documentation & Community</span>
+          </div>
+
+          <div class="grid-3">
+            <div class="card">
+              <span class="card-badge badge-cyan">Documentation</span>
+              <h3 class="card-title">Official Docs</h3>
+              <p class="card-desc">Comprehensive documentation covering all AgentField.ai features, APIs, and best practices for building production-grade agent systems.</p>
+              <button class="btn btn-sm btn-outline" style="margin-top: 12px; width: 100%;">Read Docs →</button>
+            </div>
+            <div class="card">
+              <span class="card-badge badge-purple">GitHub</span>
+              <h3 class="card-title">Open Source Repo</h3>
+              <p class="card-desc">Access the open-source AgentField.ai repository with example projects, templates, and community contributions. 2.4k+ GitHub stars.</p>
+              <button class="btn btn-sm btn-outline" style="margin-top: 12px; width: 100%;">View on GitHub →</button>
+            </div>
+            <div class="card">
+              <span class="card-badge badge-pink">Community</span>
+              <h3 class="card-title">Developer Community</h3>
+              <p class="card-desc">Join the AgentField.ai community to share ideas, ask questions, and collaborate with other builders on agent development.</p>
+              <button class="btn btn-sm btn-outline" style="margin-top: 12px; width: 100%;">Join Community →</button>
             </div>
           </div>
         </section>
