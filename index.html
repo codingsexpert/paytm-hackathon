@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agentic Devs Collective - The Hub for Agentic Developers</title>
+  <meta name="description" content="Central Hub for the Agentic Devs Collective community. Join events like Agent{A}thon NCR 2026, connect with chapters, explore AgentField.ai tools, and brainstorm with AI agents.">
+  <link rel="stylesheet" href="styles.css?v=1.1">
+</head>
+<body>
+  <!-- Liquid Glass Background Blobs -->
+  <div class="liquid-bg-blob blob-1"></div>
+  <div class="liquid-bg-blob blob-2"></div>
+  <div class="liquid-bg-blob blob-3"></div>
+
+  <!-- App Shell Container -->
+  <div class="app-container">
+    
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar" id="app-sidebar">
+      <div class="logo-section">
+        <div class="logo-icon">{A}</div>
+        <div class="logo-text">
+          <h2>AGENTIC DEVS</h2>
+          <p>COLLECTIVE</p>
+        </div>
+      </div>
+      
+      <nav class="nav-menu">
+        <li class="nav-item active" data-tab="home" id="nav-home">
+          <a href="#home"><span>🏠</span> Home</a>
+        </li>
+        <li class="nav-item" data-tab="chapters" id="nav-chapters">
+          <a href="#chapters"><span>🌐</span> Chapters</a>
+        </li>
+        <li class="nav-item" data-tab="events" id="nav-events">
+          <a href="#events"><span>📅</span> Events</a>
+        </li>
+        <li class="nav-item" data-tab="members" id="nav-members">
+          <a href="#members"><span>👥</span> Members</a>
+        </li>
+        <li class="nav-item" data-tab="resources" id="nav-resources">
+          <a href="#resources"><span>📚</span> Resources</a>
+        </li>
+        <li class="nav-item" data-tab="stats" id="nav-stats">
+          <a href="#stats"><span>📈</span> Statistics</a>
+        </li>
+        <li class="nav-item" data-tab="management" id="nav-management">
+          <a href="#management"><span>⚙️</span> Management</a>
+        </li>
+      </nav>
+      
+      <div class="sidebar-footer">
+        <div class="user-avatar" id="header-user-avatar">
+          <span>U</span>
+        </div>
+        <div class="user-info">
+          <h4 id="user-display-name">Guest Developer</h4>
+          <p id="user-display-role">Chapter Seeker</p>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Section Wrapper -->
+    <main class="main-wrapper">
+      
+      <!-- Top header bar -->
+      <header class="top-header">
+        <button class="menu-toggle-btn" id="menu-toggle-btn">☰</button>
+        <div class="header-search">
+          <input type="text" id="global-search" placeholder="Search events, chapters, skills...">
+        </div>
+        <div class="header-actions">
+          <span class="badge badge-purple" style="font-weight:bold;">Agent{A}thon NCR 2026 Partner</span>
+          <button class="btn btn-sm btn-cyan" id="quick-ticket-btn">🎟️ Get Ticket</button>
+        </div>
+      </header>
+
+      <!-- Prominent Agent{A}thon ticker -->
+      <div class="event-ticker" id="event-ticker-banner">
+        <span>🔥 <strong>Agent{A}thon NCR 2026</strong> is live! Integrate AgentField.ai into your project and score 20 bonus points.</span>
+        <button id="ticker-register-btn">Register Now</button>
+      </div>
+
+      <!-- Main content body container -->
+      <div class="content-body">
+        
+        <!-- Onboarding Prompt Banner (Removable when user is onboarded) -->
+        <div class="onboarding-banner" id="onboarding-nag-banner">
+          <div>
+            <h4>Onboard as a Member of the Collective!</h4>
+            <p>Onboard today to unlock registration, create custom tickets, submit hackathon projects, and access developer blueprints.</p>
+          </div>
+          <button class="btn btn-sm btn-cyan" id="nag-onboard-btn">Onboard Now</button>
+        </div>
+
+        <!-- VIEW: Home / Landing -->
+        <section class="view-section active" id="view-home">
+          <div class="hero-banner">
+            <span class="hero-tag">AGENTIC DEVS COLLECTIVE HUB</span>
+            <h1>The Central Hub for the Next Wave of AI Engineering</h1>
+            <p>Welcome to the Agentic Devs Collective, the premier community for engineers, researchers, and hackers building autonomous agents, multi-agent frameworks, and collaborative AI pipelines. Powered by AgentField.ai.</p>
+            <div style="display:flex; gap:12px;">
+              <button class="btn" id="hero-join-btn">Join the Collective</button>
+              <button class="btn btn-outline" id="hero-explore-events-btn">Explore Live Hackathons</button>
+            </div>
+          </div>
+
+          <div class="section-title">
+            <h2>Community Highlights</h2>
+            <span>Explore Active Channels</span>
+          </div>
+
+          <div class="grid-3">
+            <div class="card event-card featured">
+              <span class="card-badge badge-pink">Hackathon</span>
+              <h3 class="card-title">Agent{A}thon NCR 2026</h3>
+              <p class="card-desc">The flagship in-person AI Agent innovation challenge in NCR. Compete for major rewards, connect with Nerds Room, and show off AgentField.ai integrations.</p>
+              <div class="card-meta">
+                <span>📍 Delhi NCR</span>
+                <span>📅 July 18, 2026</span>
+              </div>
+            </div>
+            <div class="card">
+              <span class="card-badge badge-cyan">Featured Chapters</span>
+              <h3 class="card-title">Delhi & Bengaluru Hubs</h3>
+              <p class="card-desc">Connecting over 650+ local builders. Find weekly developer syncs, coworking check-ins, and local workshops in India's leading tech corridors.</p>
+              <div class="card-meta">
+                <span>🌐 6 Active Chapters</span>
+                <span>👥 1500+ Members</span>
+              </div>
+            </div>
+            <div class="card">
+              <span class="card-badge badge-purple">Tool Spotlight</span>
+              <h3 class="card-title">AgentField.ai Platform</h3>
+              <p class="card-desc">Our primary SDK for orchestrating autonomous workflows, multi-agent collaborations, and production-grade task queues. Free boilerplate templates inside.</p>
+              <div class="card-meta">
+                <span>🛠️ Open Source</span>
+                <span>⭐ 2.4k GitHub Stars</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Highlight Events & Statistics brief -->
+          <div class="grid-2">
+            <div class="card">
+              <h3>Community Growth Dashboard</h3>
+              <p class="card-desc">Tracking developers building agent systems. New chapter expansion is currently active.</p>
+              <div id="home-growth-chart" style="margin-top:16px; min-height:180px;"></div>
+            </div>
+            <div class="card">
+              <h3>Agent{A}thon NCR Evaluation Criteria</h3>
+              <p class="card-desc">Securing the AgentField.ai sponsored bonus points.</p>
+              <ul style="padding-left: 20px; font-size: 13px; color: var(--text-muted); line-height: 1.8;">
+                <li>Integrate the AgentField.ai client SDK into your pipeline.</li>
+                <li>Establish tool call callbacks for external network interactions.</li>
+                <li>Design interactive agents working together to solve the prompt.</li>
+                <li>Demonstrate execution logs in your pitch deck.</li>
+              </ul>
+              <button class="btn btn-sm btn-outline btn-block" style="margin-top: 16px;" id="home-bonus-info-btn">Read Integration Specs</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- VIEW: Chapters (Directory & Map) -->
+        <section class="view-section" id="view-chapters">
+          <div class="section-title">
+            <h2>Collective Chapters</h2>
+            <span>Interactive Map & Directory</span>
+          </div>
+
+          <!-- Filter bar -->
+          <div class="filter-bar">
+            <input type="text" id="chapter-search" placeholder="Filter by city/country...">
+            <select id="chapter-status-filter">
+              <option value="all">All Chapters</option>
+              <option value="featured">Featured Hubs</option>
+              <option value="active">Active Chapters</option>
+            </select>
+          </div>
+
+          <!-- SVG Visual Map -->
+          <div class="map-container" id="chapters-map-panel">
+            <!-- Realistic Stylized World Map Background -->
+            <svg class="map-svg-bg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="mapArcGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="var(--purple)" stop-opacity="0.1"/>
+                  <stop offset="50%" stop-color="var(--cyan)" stop-opacity="0.7"/>
+                  <stop offset="100%" stop-color="var(--cyan)" stop-opacity="1"/>
+                </linearGradient>
+              </defs>
+
+              <!-- Grid Overlay -->
+              <line x1="0" y1="20" x2="100" y2="20" stroke="rgba(28,25,23,0.03)" stroke-dasharray="2" />
+              <line x1="0" y1="40" x2="100" y2="40" stroke="rgba(28,25,23,0.03)" stroke-dasharray="2" />
+              <line x1="0" y1="60" x2="100" y2="60" stroke="rgba(28,25,23,0.03)" stroke-dasharray="2" />
+              <line x1="0" y1="80" x2="100" y2="80" stroke="rgba(28,25,23,0.03)" stroke-dasharray="2" />
+              <line x1="20" y1="0" x2="20" y2="100" stroke="rgba(28,25,23,0.03)" stroke-dasharray="2" />
+              <line x1="40" y1="0" x2="40" y2="100" stroke="rgba(28,25,23,0.03)" stroke-dasharray="2" />
+              <line x1="60" y1="0" x2="60" y2="100" stroke="rgba(28,25,23,0.03)" stroke-dasharray="2" />
+              <line x1="80" y1="0" x2="80" y2="100" stroke="rgba(28,25,23,0.03)" stroke-dasharray="2" />
+
+              <!-- Continent Outlines -->
+              <!-- North America -->
+              <path d="M 4 12 Q 10 8 18 16 T 15 36 T 6 28 Z" fill="rgba(28,25,23,0.03)" stroke="rgba(28,25,23,0.06)" stroke-width="0.3" />
+              <!-- South America -->
+              <path d="M 14 42 Q 22 52 18 70 T 12 82 T 10 56 Z" fill="rgba(28,25,23,0.03)" stroke="rgba(28,25,23,0.06)" stroke-width="0.3" />
+              <!-- Eurasia / Africa -->
+              <path d="M 38 12 Q 52 6 78 12 T 94 26 T 88 44 T 58 44 T 42 34 Z" fill="rgba(28,25,23,0.03)" stroke="rgba(28,25,23,0.06)" stroke-width="0.3" />
+              <path d="M 38 38 Q 50 40 56 55 T 46 72 T 36 46 Z" fill="rgba(28,25,23,0.03)" stroke="rgba(28,25,23,0.06)" stroke-width="0.3" />
+              <!-- Australia -->
+              <path d="M 76 60 Q 86 64 84 74 T 74 72 Z" fill="rgba(28,25,23,0.03)" stroke="rgba(28,25,23,0.06)" stroke-width="0.3" />
+
+              <!-- Connection Arcs (Animated Network) -->
+              <path d="M 10 25 Q 30 15 50 35" class="map-connection-arc" />
+              <path d="M 45 70 Q 40 50 50 35" class="map-connection-arc" />
+              <path d="M 30 55 Q 38 42 50 35" class="map-connection-arc" />
+              <path d="M 80 15 Q 68 20 50 35" class="map-connection-arc" />
+              <path d="M 92 35 Q 75 25 50 35" class="map-connection-arc" />
+            </svg>
+            
+            <!-- Absolute mapped pin markers -->
+            <div id="map-pins-layer"></div>
+            <!-- Popover overlay detail window -->
+            <div class="map-popup" id="map-info-popup"></div>
+          </div>
+
+          <div class="grid-3" id="chapters-list-grid">
+            <!-- Filled dynamically -->
+          </div>
+        </section>
+
+        <!-- VIEW: Events -->
+        <section class="view-section" id="view-events">
+          <div class="section-title">
+            <h2>Community Events</h2>
+            <span>Hackathons, Panels & Labs</span>
+          </div>
+
+          <div class="filter-bar">
+            <input type="text" id="event-search" placeholder="Search event titles...">
+            <select id="event-type-filter">
+              <option value="all">All Types</option>
+              <option value="Hackathon">Hackathons</option>
+              <option value="Workshop">Workshops</option>
+              <option value="Panel Discussion">Panels</option>
+              <option value="Meetup">Meetups</option>
+            </select>
+          </div>
+
+          <div class="grid-2" id="events-list-grid">
+            <!-- Filled dynamically -->
+          </div>
+        </section>
+
+        <!-- VIEW: Members -->
+        <section class="view-section" id="view-members">
+          <div class="section-title">
+            <h2>Member Directory</h2>
+            <span>Discover Collaborators & Experts</span>
+          </div>
+
+          <div class="filter-bar">
+            <input type="text" id="member-search" placeholder="Search by name, skill, chapter...">
+            <select id="member-skill-filter">
+              <option value="all">All Skills</option>
+              <option value="AgentField.ai">AgentField.ai</option>
+              <option value="Python">Python</option>
+              <option value="CrewAI">CrewAI</option>
+              <option value="React">React</option>
+            </g></select>
+          </div>
+
+          <div class="member-grid" id="members-list-grid">
+            <!-- Filled dynamically -->
+          </div>
+        </section>
+
+        <!-- VIEW: Resources -->
+        <section class="view-section" id="view-resources">
+          <div class="section-title">
+            <h2>Developer Resources</h2>
+            <span>AgentField.ai Blueprints & Starters</span>
+          </div>
+
+          <div class="filter-bar">
+            <input type="text" id="resource-search" placeholder="Search tutorials, templates, guides...">
+            <select id="resource-tag-filter">
+              <option value="all">All Resources</option>
+              <option value="AgentField.ai">AgentField.ai SDK</option>
+              <option value="Python">Python Starters</option>
+              <option value="Orchestration">Agent Orchestration</option>
+            </select>
+          </div>
+
+          <div class="resource-list" id="resources-list-container">
+            <!-- Filled dynamically -->
+          </div>
+        </section>
+
+        <!-- VIEW: Statistics -->
+        <section class="view-section" id="view-stats">
+          <div class="section-title">
+            <h2>Community Statistics</h2>
+            <span>Real-time Analytics Dashboard</span>
+          </div>
+
+          <div class="stats-bar">
+            <div class="stat-card">
+              <div>
+                <p>TOTAL REGISTERED MEMBERS</p>
+                <h3 id="stat-total-members">1,728</h3>
+              </div>
+              <span style="color:#00f2fe; font-size:12px;">↗ +14% this month</span>
+            </div>
+            <div class="stat-card">
+              <div>
+                <p>ACTIVE CITIES CHAPTERS</p>
+                <h3 id="stat-active-chapters">6</h3>
+              </div>
+              <span style="color:#a78bfa; font-size:12px;">🌍 Global distribution</span>
+            </div>
+            <div class="stat-card">
+              <div>
+                <p>AGENT{A}THON SIGNUPS</p>
+                <h3 id="stat-agentathon-signups">1,240</h3>
+              </div>
+              <span style="color:#ff007f; font-size:12px;">⚡ Target limit 1.5k</span>
+            </div>
+            <div class="stat-card">
+              <div>
+                <p>AGENTFIELD PROJECT SUBMISSIONS</p>
+                <h3 id="stat-agentfield-projects">24</h3>
+              </div>
+              <span style="color:#ffaa00; font-size:12px;">📈 Secure +20 pts</span>
+            </div>
+          </div>
+
+          <div class="grid-2">
+            <div class="card">
+              <h4>Active Member Growth Timeline</h4>
+              <p class="card-desc">Tracks overall developer additions month-over-month.</p>
+              <div id="stats-line-chart" style="margin-top:20px; min-height:220px;"></div>
+            </div>
+            <div class="card">
+              <h4>Event Registrations by Regional Chapter</h4>
+              <p class="card-desc">Registrations specifically for the upcoming Agent{A}thon NCR 2026.</p>
+              <div id="stats-bar-chart" style="margin-top:20px; min-height:220px;"></div>
+            </div>
+          </div>
+
+          <div class="grid-3" style="margin-top:24px;">
+            <div class="card">
+              <h4>Framework Distribution Share</h4>
+              <p class="card-desc">Primary framework used in submitted hacks.</p>
+              <div id="stats-donut-chart" style="margin-top:20px; min-height:220px;"></div>
+            </div>
+            <div class="card" style="grid-column: span 2;">
+              <h4>Top Community Contributors</h4>
+              <p class="card-desc">Recognizing builders answering questions and submitting open source tools.</p>
+              <table style="width:100%; border-collapse:collapse; margin-top:16px; font-size:13px; text-align:left;">
+                <thead>
+                  <tr style="border-bottom:1px solid rgba(255,255,255,0.1); color:var(--text-muted);">
+                    <th style="padding:10px 0;">Developer Name</th>
+                    <th>Chapter</th>
+                    <th>Shared Projects</th>
+                    <th>Developer Score</th>
+                  </tr>
+                </thead>
+                <tbody style="color:var(--text-main);">
+                  <tr style="border-bottom:1px solid rgba(255,255,255,0.05);">
+                    <td style="padding:12px 0; font-weight:600;">Priya Rao</td>
+                    <td>Bengaluru</td>
+                    <td>5 Repos</td>
+                    <td style="color:var(--cyan); font-weight:bold;">1,420 pts</td>
+                  </tr>
+                  <tr style="border-bottom:1px solid rgba(255,255,255,0.05);">
+                    <td style="padding:12px 0; font-weight:600;">Kabir Mehta</td>
+                    <td>Delhi NCR</td>
+                    <td>3 Repos</td>
+                    <td style="color:var(--cyan); font-weight:bold;">1,180 pts</td>
+                  </tr>
+                  <tr style="border-bottom:1px solid rgba(255,255,255,0.05);">
+                    <td style="padding:12px 0; font-weight:600;">Alex Rivera</td>
+                    <td>San Francisco</td>
+                    <td>4 Repos</td>
+                    <td style="color:var(--cyan); font-weight:bold;">980 pts</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- VIEW: Management (For Chapter Leads & Project Submission) -->
+        <section class="view-section" id="view-management">
+          <div class="section-title">
+            <h2>Chapter & Submission Dashboard</h2>
+            <span>Manage local events & submit projects</span>
+          </div>
+
+          <div class="grid-2">
+            <!-- Left Panel: Create Event -->
+            <div class="card">
+              <h3>Create Chapter Event</h3>
+              <p class="card-desc">Simulated for Chapter Leads. Register new panels or hackathons into the Collective directory.</p>
+              <form id="create-event-form" style="margin-top: 16px;">
+                <div class="form-group">
+                  <label for="new-event-title">Event Title</label>
+                  <input type="text" id="new-event-title" placeholder="e.g., Agents and LLMs Meetup" required>
+                </div>
+                <div class="grid-2" style="gap:12px; margin-bottom:0;">
+                  <div class="form-group">
+                    <label for="new-event-date">Event Date</label>
+                    <input type="date" id="new-event-date" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="new-event-type">Type</label>
+                    <select id="new-event-type">
+                      <option value="Meetup">Meetup</option>
+                      <option value="Workshop">Workshop</option>
+                      <option value="Hackathon">Hackathon</option>
+                      <option value="Panel Discussion">Panel</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="new-event-location">Venue/Location</label>
+                  <input type="text" id="new-event-location" placeholder="e.g., Delhi Lab / Zoom" required>
+                </div>
+                <div class="form-group">
+                  <label for="new-event-desc">Brief Description</label>
+                  <textarea id="new-event-desc" rows="3" placeholder="What are we learning?" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-cyan btn-block">📢 Publish Event to Feed</button>
+              </form>
+            </div>
+
+            <!-- Right Panel: Submit Agent{A}thon Project -->
+            <div class="card">
+              <h3>Submit Agent{A}thon Project</h3>
+              <p class="card-desc">Verify your project details and evaluate your eligibility for the **20 bonus points** powered by AgentField.ai.</p>
+              <form id="project-submission-form" style="margin-top: 16px;">
+                <div class="form-group">
+                  <label for="proj-title">Project Title</label>
+                  <input type="text" id="proj-title" placeholder="e.g., AgriSense Agent Grid" required>
+                </div>
+                <div class="form-group">
+                  <label for="proj-pitch">Project Summary Pitch</label>
+                  <textarea id="proj-pitch" rows="2" placeholder="Briefly describe what your AI agent does" required></textarea>
+                </div>
+                <div class="form-group">
+                  <label for="proj-github">GitHub Repository</label>
+                  <input type="url" id="proj-github" placeholder="https://github.com/..." required>
+                </div>
+                
+                <!-- Integration Checklist -->
+                <div style="background:rgba(255,255,255,0.02); border:1px solid var(--border-glass); padding:16px; border-radius:8px; margin-bottom:16px;">
+                  <h4 style="font-size:12px; margin-bottom:10px; color:var(--cyan); letter-spacing:1px;">AGENTFIELD.AI EVALUATION CHECKLIST</h4>
+                  
+                  <label style="display:flex; align-items:center; gap:8px; font-size:12px; margin-bottom:8px; cursor:pointer;">
+                    <input type="checkbox" id="check-sdk" style="width:auto;"> Integrates AgentField.ai SDK/API directly into backend routing.
+                  </label>
+                  
+                  <label style="display:flex; align-items:center; gap:8px; font-size:12px; margin-bottom:8px; cursor:pointer;">
+                    <input type="checkbox" id="check-agents" style="width:auto;"> Leverages multi-agent system execution (at least 2 coordinating agents).
+                  </label>
+                  
+                  <label style="display:flex; align-items:center; gap:8px; font-size:12px; cursor:pointer;">
+                    <input type="checkbox" id="check-tools" style="width:auto;"> Custom Tool definitions bound to agent callback cycles.
+                  </label>
+                </div>
+
+                <div id="bonus-points-calc" style="font-size:13px; color:var(--text-muted); margin-bottom:16px; display:flex; justify-content:space-between; align-items:center;">
+                  <span>Calculated Integration Bonus:</span>
+                  <strong style="color:var(--pink); font-size:15px;" id="bonus-points-score">+0 Points</strong>
+                </div>
+
+                <button type="submit" class="btn btn-cyan btn-block">🚀 Submit Project & Score</button>
+              </form>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </main>
+  </div>
+
+  <!-- PERSISTENT FLOATING CHAT DRAWER -->
+  <div class="chat-drawer" id="assistant-drawer">
+    <div class="chat-header">
+      <div class="chat-header-title">
+        <div class="chat-status-dot"></div>
+        <div>
+          <h4 style="font-size:13px; font-weight:bold;">AgentField Dev-Buddy</h4>
+          <span style="font-size:10px; color:var(--text-muted);">Agent{A}thon Copilot & Onboarding Assistant</span>
+        </div>
+      </div>
+      <button class="modal-close" style="position:static; font-size:18px;" id="close-chat-btn">×</button>
+    </div>
+    
+    <div class="chat-body" id="chat-messages-container">
+      <div class="chat-message assistant">
+        Hi there! I am your interactive AI Dev-Buddy. I can help onboard you to the collective, register you for the <strong>Agent{A}thon NCR 2026</strong> event, generate entry tickets, or brainstorm project ideas leveraging AgentField.ai workflows!
+      </div>
+      <div class="chat-quick-actions">
+        <button id="qa-register">🎟️ Register Agentathon</button>
+        <button id="qa-onboard">⚡ Join Collective</button>
+        <button id="qa-brainstorm">💡 Project Ideas</button>
+        <button id="qa-bonus">🔥 How to get Bonus Points</button>
+      </div>
+    </div>
+
+    <div class="chat-footer">
+      <input type="text" id="chat-input" placeholder="Type a message or click an action...">
+      <button id="chat-send-btn">➔</button>
+    </div>
+  </div>
+
+  <!-- FLOATING FAB TRIGGER -->
+  <button class="chat-fab" id="chat-fab-btn">💬</button>
+
+  <!-- MODAL: EVENT REGISTRATION OVERLAY -->
+  <div class="modal-overlay" id="registration-modal">
+    <div class="modal-container">
+      <button class="modal-close" id="modal-close-btn">×</button>
+      <h3 class="modal-title" id="modal-event-title">Event Registration</h3>
+      <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 20px; line-height: 1.5;" id="modal-event-desc">
+        You are registering for this chapter event. Confirm your details to download your digital access ticket.
+      </p>
+      
+      <form id="modal-registration-form">
+        <div class="form-group">
+          <label for="reg-name">Full Name</label>
+          <input type="text" id="reg-name" placeholder="John Doe" required>
+        </div>
+        <div class="form-group">
+          <label for="reg-email">Email Address</label>
+          <input type="email" id="reg-email" placeholder="john@example.com" required>
+        </div>
+        <div class="form-group">
+          <label for="reg-role">Your Coding Role</label>
+          <select id="reg-role">
+            <option value="student">Student Builder</option>
+            <option value="developer">Professional AI Engineer</option>
+            <option value="founder">Aspiring Founder</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-cyan btn-block" style="margin-top:10px;">🎟️ Confirm Registration & Get Ticket</button>
+      </form>
+    </div>
+  </div>
+
+  <script type="module" src="app.js?v=1.1"></script>
+</body>
+</html>
